@@ -44,6 +44,24 @@ namespace ListGennemgang
             //Spørgsmål ?
 
 
+            //FILO FirstInLastOut
+            //kort gennemgang af Stack() først på tavlen
+            //Stack<int> mySTack = new Stack<int>();
+            //mySTack.Push(3);
+            //mySTack.Push(5);
+            //Console.WriteLine($"Antal i mySTack : {mySTack.Count}");
+            //Console.WriteLine($"POP : {mySTack.Pop()}");
+            //Console.WriteLine($"Antal i myStack : {mySTack.Count}");
+
+            //FIFO FirstInFirstOut
+            //Kort gennemgang af Queue først på tavlen
+            //Queue<int> myQueue = new Queue<int>();
+            //myQueue.Enqueue(10);
+            //myQueue.Enqueue(100);
+            //myQueue.Enqueue(1000);
+            //Console.WriteLine(myQueue.Dequeue());
+            //Console.WriteLine(myQueue.Dequeue());
+            //Console.WriteLine(myQueue.Dequeue());
         }
     }
 }

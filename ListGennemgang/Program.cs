@@ -85,7 +85,12 @@ namespace ListGennemgang
 
             //Nr 3: en ny liste med objekter af fx studerende i 1R
             //vi opretter en ny klasse Person
-            List<Person> personListe = new List<Person>();
+
+            //liste som initialiseres(Collection initialisers) med en ny person
+
+            List<Person> personListe = new List<Person>() {
+                new Person("NyPerson " ,60, "0W")
+        };
 
             //tilføj ny variabel med Person
             Person person1 = new Person("Anders And", 100, "1S");

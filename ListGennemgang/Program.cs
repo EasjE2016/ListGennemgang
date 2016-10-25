@@ -85,14 +85,50 @@ namespace ListGennemgang
 
             //Nr 3: en ny liste med objekter af fx studerende i 1R
             //vi opretter en ny klasse Person
-            Person 
+            List<Person> personListe = new List<Person>();
+
             //tilføj ny variabel med Person
+            Person person1 = new Person("Anders And", 100, "1S");
+            Person person2 = new Person("Andersine",110,"1S");
 
             //tilføj objekt med Add()
+            personListe.Add(person1);
+            personListe.Add(person2);
 
             //tilføj direkte med Add(new Person)
+            personListe.Add(new Person("Rip", 70, "0W"));
 
-            //foreach og tilføj objekt
+            foreach (Person p in personListe)
+            {
+                Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
+            }
+
+            //foreach og tilføj 10 nye personer objekt
+
+            for (int i = 0; i < 10; i++)
+            {
+                personListe.Add(new Person("NyPerson "+ i, (i*10)+60, "0W"));
+
+            }
+
+            foreach (Person p in personListe)
+            {
+                Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
+            }
+
+            foreach (Person p in personListe)
+            {
+                p.SetIq(100);
+            }
+
+
+            foreach (Person p in personListe)
+            {
+                Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
+            }
+
+
+
 
             //Spørgsmål ?
 

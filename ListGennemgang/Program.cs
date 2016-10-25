@@ -68,9 +68,19 @@ namespace ListGennemgang
                 Console.WriteLine($"værdien er :{l}");
             }
 
-
-
             //Nr 2: en ny liste med strings
+            List<string> navneListe = new List<string>();
+            navneListe.Add("Anne Sofie");
+            navneListe.Add("Magnus");
+            navneListe.Add("Kasper");
+            navneListe.Add("Lisa");
+
+            foreach (string navn in navneListe)
+            {
+                Console.WriteLine($"navnet er : {navn}");
+            }
+
+            Console.WriteLine($"Antal i navnelisten {navneListe.Count}" );
 
 
             //Nr 3: en ny liste med objekter af fx studerende i 1R

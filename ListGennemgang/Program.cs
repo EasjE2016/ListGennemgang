@@ -85,7 +85,7 @@ namespace ListGennemgang
 
             //Nr 3: en ny liste med objekter af fx studerende i 1R
             //vi opretter en ny klasse Person
-
+            Person 
             //tilføj ny variabel med Person
 
             //tilføj objekt med Add()

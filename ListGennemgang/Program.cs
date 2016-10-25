@@ -8,6 +8,8 @@ namespace ListGennemgang
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
 
@@ -15,16 +17,57 @@ namespace ListGennemgang
             //har kodet fx et Person objekt eller Dice objekt.
 
             //Nr 1 : en ny liste med heltal (int)
-
+            List<int> listeHeltal = new List<int>();
             //tilføj tal //Add()
+            listeHeltal.Add(10);
+            listeHeltal.Add(20);
+            listeHeltal.Add(30);
+
+            
+            //looper igennem listen
+            foreach (int l in listeHeltal)
+            {
+                Console.WriteLine($"værdien er :{l}");
+            }
+
 
             //Skriv antallet af elementer ud //liste.Count
+            Console.WriteLine($"Antal elementer : {listeHeltal.Count}");
 
             //fjern element på bestemt position //RemoveAt()
+            listeHeltal.RemoveAt(1);
 
             //Skriv antallet af elementer ud //liste.Count
+            Console.WriteLine($"Antal elementer : {listeHeltal.Count}");
+
+            foreach (int l in listeHeltal)
+            {
+                Console.WriteLine($"værdien er :{l}");
+            }
 
             //Slet alt data i listen //Clear()
+            listeHeltal.Clear();
+
+            Console.WriteLine($"Antal elementer : {listeHeltal.Count}");
+
+            listeHeltal.Add(10);
+            listeHeltal.Add(20);
+            listeHeltal.Add(30);
+            listeHeltal.Add(20);
+            listeHeltal.Add(30);
+
+            foreach (int l in listeHeltal)
+            {
+                Console.WriteLine($"værdien er :{l}");
+            }
+
+            listeHeltal.Remove(30);
+            Console.WriteLine("Efter remove(30)");
+            foreach (int l in listeHeltal)
+            {
+                Console.WriteLine($"værdien er :{l}");
+            }
+
 
 
             //Nr 2: en ny liste med strings
@@ -64,4 +107,5 @@ namespace ListGennemgang
             //Console.WriteLine(myQueue.Dequeue());
         }
     }
-}
+        }
+   

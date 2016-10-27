@@ -103,10 +103,19 @@ namespace ListGennemgang
             //tilføj direkte med Add(new Person)
             personListe.Add(new Person("Rip", 70, "0W"));
 
-            foreach (Person p in personListe)
-            {
-                Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
-            }
+            Console.WriteLine($"første element {personListe[0].Navn}");
+
+            //foreach (Person p in personListe)
+            //{
+            //    Console.WriteLine($"navn: {p.Navn} iq {p.IQ} klasse {p.Klassenavn}" );
+
+            //    //Console.WriteLine(p.Navn);
+
+            //    //Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
+            //}
+
+
+            //Console.ReadLine();
 
             //foreach og tilføj 10 nye personer objekt
 
@@ -121,10 +130,10 @@ namespace ListGennemgang
                 Console.WriteLine($"navn : {p.Navn} Iq: {p.IQ}");
             }
 
-            foreach (Person p in personListe)
-            {
-                p.SetIq(100);
-            }
+            //foreach (Person p in personListe)
+            //{
+            //    p.SetIq(100);
+            //}
 
 
             foreach (Person p in personListe)
@@ -133,8 +142,48 @@ namespace ListGennemgang
             }
 
 
+            var dictPerson = new Dictionary<string, Person>();
+
+            dictPerson.Add("Anders And", person1);
+
+            //dictPerson.Add("Andersine", person2);
+            dictPerson.Add("Praktikant", new Person("Praktikant", 175, "1R"));
+
+            //dictPerson.Add(1, person1);
+ 
+            //dictPerson.Add(2, person2);
+
+            if(dictPerson.ContainsKey("Andersine"))
+            {
+                Console.WriteLine("Vi fandt Andersine!");
+                dictPerson["Andersine"].Print();
+                    //Console.WriteLine($"Navn er {dictPerson["Andersine"].Navn}"); 
+
+            }
+            else
+            {
+                Console.WriteLine("Andersine fandtes ikke");
+            }
+
+            //bool exist = dictPerson.ContainsKey(55);
+
+            //Console.WriteLine("Exist 55 : " +exist);
+
+            //Console.ReadLine();
 
 
+
+            foreach (KeyValuePair<string,Person> item in dictPerson)
+            {
+                string id = item.Key;
+                int iq = item.Value.IQ;
+                string navn = item.Value.Navn;
+                item.Value.Print();
+                //Console.WriteLine($"id er : {id} og IQ er: {iq} navn : {navn}");
+            }
+
+            Console.ReadLine();
+            //Console.WriteLine(exist);
             //Spørgsmål ?
 
 

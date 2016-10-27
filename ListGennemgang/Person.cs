@@ -13,6 +13,11 @@ namespace ListGennemgang
         public int IQ { get; private set; }
         public string Klassenavn { get; private set; }
 
+        public void Print()
+        {
+            Console.WriteLine($"navn er : {this.Navn} og IQ er: {this.IQ} klassenavn : {this.Klassenavn}");
+        }
+
         public Person(string navn, int iq, string klassenavn)
         {
             this.Navn = navn;
